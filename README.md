@@ -1,54 +1,95 @@
-# Starlight Starter Kit: Basics
+<!-- Using h2 instead of h1 because npm doesn't support align=center on h1 tags -->
+<h1 align="center">
+  <a href="#readme" title="Leology README.md"><img alt="Leology" src="https://github.com/leology-org/leology/blob/020cdb1f59f1f6cebd3cb30bb12f779c84ffb435/README/leologo.png" alt="Leology" width="160"/></a>
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Leology
 
+</h1>
+
+<h3 align="center">
+  A tool for testing programs for fast Aleo development.
+</h3>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#future">Future Work</a> •
+  <a href="#related">Related</a>
+</p>
+
+---
+
+## Features
+
+Leology is an Aleo testing framework that makes developing Leo programs faster, easier, and safer. It includes the most commonly used RPC functions and can be run deterministically to make development a breeze.
+
+- Easy setup of Local Testnet
+- Generate Accounts for testing
+- Programmatic use in Rust to run tests
+- Testing of both private and public values
+- Local deployment of programs
+- Aleo RPC support
+
+## Getting Started
+
+### Requirements
+
+- Tmux
+- Rust
+- Cargo
+- [snarkOS](https://github.com/AleoHQ/snarkOS)
+- [snarkVM](https://github.com/AleoHQ/snarkVM)
+
+### Command line use
+
+Clone this Repository
+
+```console
+$ git clone git@github.com:ottodevs/leology.git
 ```
-npm create astro@latest -- --template starlight
+
+Navigate to the directory
+
+```console
+$ cd leology
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+To spin up the local testnet
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```console
+$ cargo run start
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+To stop the local testnet
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+```console
+$ cargo run stop
+```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+### To test the example Leo program
 
-## 🧞 Commands
+Navigate to the directory
 
-All commands are run from the root of the project, from a terminal:
+```console
+$ cd examples/token
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Run the testing command
 
-## 👀 Want to learn more?
+```console
+$ cargo test
+```
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## Future
+
+- Run minimalistic version of snarkos for efficiency
+- Full integration of RPC
+- Integration with Leo
+
+## Related
+
+- [Aleo GitHub](https://github.com/aleoHQ/)
+
+<br/>
+
+---
