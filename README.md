@@ -1,6 +1,6 @@
 <!-- Using h2 instead of h1 because npm doesn't support align=center on h1 tags -->
 <h1 align="center">
-  <a href="#readme" title="Leology README.md"><img alt="Leology" src="https://github.com/leology-org/leology/blob/020cdb1f59f1f6cebd3cb30bb12f779c84ffb435/README/leologo.png" alt="Leology" width="160"/></a>
+  <a href="#readme" title="Leology README.md"><img alt="Leology" src="https://raw.githubusercontent.com/leology-org/leology/cffc5fcb9e9b00b62d6535266a872be0fba1331d/img/leologo.png" alt="Leology" width="160"/></a>
 
 Leology
 
@@ -45,7 +45,7 @@ Leology is an Aleo testing framework that makes developing Leo programs faster, 
 Clone this Repository
 
 ```console
-$ git clone git@github.com:ottodevs/leology.git
+$ git clone git@github.com:leology-org/leology.git
 ```
 
 Navigate to the directory
@@ -82,7 +82,7 @@ $ cargo test
 
 ## Future
 
-- Run minimalistic version of snarkos for efficiency
+- Run minimalistic version of SnarkOS for efficiency
 - Full integration of RPC
 - Integration with Leo
 
